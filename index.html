@@ -59,6 +59,9 @@
 										<li>
 												<a class="page-scroll" href="#designdevelopment">Design Development</a>
 										</li>
+										<li>
+												<a class="page-scroll" href="#designrefinement">Design Refinement</a>
+										</li>
 								</ul>
 						</div>
 						<!-- /.navbar-collapse -->
@@ -386,7 +389,7 @@
 		</section>
 
 		<!-- Design Development Section -->
-		<section id="designdevelopment" class="services-section">
+		<section id="designdevelopment" class="intro-section">
 				<div class="container">
 						<div class="row">
 								<div class="col-lg-12">
@@ -434,6 +437,28 @@
 										Along the line of productivity tools, simple functions like chat, screenshare, and attaching documents are now so commonplace that users virtually identified them as “absolutely necessary” to have, regardless of whether or not they individually used them (though most did). Many other conference call products such as WebEx and Skype provide many additional features that few users told us that they used. Those that did use these more obscure features said they could never find them amid the rest of the obscure features. Our design eliminates these extra features, tending towards a more simplistic design with only core features. The only specialized feature we added was the agenda management bar, because as we discovered in trying our own meeting, and in talking to users, simply having a visible agenda can change the urgency and tone of a meeting. Having something to look at and ponder during a meeting instead of whitespace or video feeds changes the perception people have, as well as invites shared facilitation and ownership of the meeting.<br><br>
 										Our users used “unified” and “personalized” to describe what they wanted out of conference calling interfaces. This makes sense with thought: users want to be able to have individual control of what they are doing, but want to be able to see what others are seeing. Creating function-linked unification and personalization was a way in which we attempted to strike the balance for our users. They have the ability to use most features in the way they want to - they can view documents when they want, add comments, post to the chat, change volume - but when all focus is on a particular group action like screensharing a presentation, a unified interaction is initiated.<br><br>
 										In moving forward, armed with these insights and the latest paper prototype, we will be conducting several more user interviews so as to completely prove the workspace and workspace bar interactions we have developed. We anticipate that the layout of the workspace bar could change following these interviews. This next phase will be focused on the development of wireframes to further test the aesthetic design of our interface and explore more virtual expressions of feedback (like glow, color, highlighting, graying).</p>
+								</div>
+						</div>
+				</div>
+		</section>
+
+		<section id="designrefinement" class="about-section">
+				<div class="container">
+						<div class="row">
+								<div class="col-lg-12">
+										<h1>Design Refinement and Site Map</h1>
+										<h2>Site Map Description</h2>
+										<p>There are three main screens in this application: the Scheduling Assistant, the Pre-Join Screen, and the In-Call Productivity Space.<br><br>
+										The Scheduling Assistant, accessible by the Outlook Calendar integration “Add Conference Call” button, offers the key features of task addition, document addition, indicating whether to record the call, predefine call requirements, and confirm the details of the meeting. Adding a task causes a small pane to appear on the screen in which the users can add details including task title, task details, or document to associate with task. Users can discard or save each task. Similarly, adding a document allows a system window to pop-up, letting the user select their desired file. Requirements of the meeting are saved in the system and later populate as defaults in the Pre-Join Screen (for example, there will be a video tester if video is required) or expressed to users in the link that is put in the iCal invitation (for example, “Sharescreen will be a functionality that will be used in the meeting”).<br><br>
+										Once a user confirms the details, a hyperlink with message is posted in the iCal invitation. When meeting time comes around, a Join button will be available on the reminder screen which accesses the link, thus opening the person’s internet browser to the Pre-Join Screen. On this screen, a user can mute their microphone, turn off their video feed, see who is already in the call, and join the call. A message indicating whether or not the meeting is being recorded is also provided.<br><br>
+										Clicking “Join Call” sends the user to the main Call Productivity Space in which they are one of several participants, viewable at the bottom of the screen. In this Participants Pane, a user can unmute/mute their microphone, turn on/off their video, maximize the video of other participants into the Workspace Pane by clicking on them, adjust the volume of other participants, and end the call.<br><br>
+										Users also have a shared agenda pane in which any individual can add an agenda item or check-off an agenda item. This is a scrollable pane for long agendas. Adding or checking off an agenda item is a global change, which means that individuals will see results of an individual’s additions or check marks on their agenda panes.<br><br>
+										Passive elements like a title bar and timer are also available for users to view.<br><br>
+										The Workspace contains a feature bar, listing (from left to right) Chat, Share Screen, and Documents. Clicking on the chat button causes the tab to slide up, revealing a global instant messenger with typical controls: typing in a text box, pressing enter to send messages. This can be minimized by clicking on Chat again. For users that have the chat window open, new messages will simply appear. For users with the chat window minimized, they will get a small indicator posted onto the button, showing the number of recent messages.<br><br>
+										Clicking in the Share Screen button changes a user’s video feed into their desktop screen. This becomes instantly viewable in the workspace by other participants in the call, however it does not close any previously open windows underneath. The screen-sharer also has a new function: Give Control. Clicking on this button causes other participants in the Participants Bar to glow. Selecting a participant gives them control of the screen-sharer’s computer. This is indicated to the controlling user by a text indicator and glowing mouse. The Give Control and Screen Share buttons change to End Control and End Share respectively. When End Control is clicked, the controlling participant no longer glows or has control. The End Share is clicked, the original video feed of the sharer is restored, and the video feed is minimized for other users.<br><br>
+										Posting a document, by clicking on the + button and selecting a file from a normal computer file system window, will cause the file to be added to the call’s document cloud. The document will become accessible to all members on their Documents section. By clicking on the document title, the document will open in the workspace of the individual user. Clicking on a document does not open it for all other members. When open in the screen, the cursor changes to a highlighter pen. Clicking and dragging causes the areas touched to change colors, to indicate highlighting. Releasing the button causes a comment bubble to appear in which a note can be typed. A blank bubble will simply disappear.<br><br>
+										To end a call, the “End Call” button can be selected, or the internet browser tab could be closed. In both cases, the person who removed themselves from the call will disappear from the participants field for other users. When the last participant leaves a call, the cloud documents and agenda are captured and saved to the original conference link. When a user re-visits the link, the saved information will be accessible.</p>
+										<img src="images/sitemap.JPG">
 								</div>
 						</div>
 				</div>
