@@ -1,5 +1,6 @@
 ﻿body {
   margin:0px;
+  background-color:rgba(204, 204, 204, 1);
   background-image:none;
   position:relative;
   left:-0px;
@@ -28,9 +29,9 @@
 }
 #u1 {
   position:absolute;
-  left:2px;
+  left:0px;
   top:414px;
-  width:1496px;
+  width:1500px;
   visibility:hidden;
   word-wrap:break-word;
 }
