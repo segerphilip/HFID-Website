@@ -38,21 +38,21 @@
   position:absolute;
   left:90px;
   top:50px;
-  width:297px;
+  width:371px;
   height:37px;
 }
 #u2_img {
   position:absolute;
   left:0px;
   top:0px;
-  width:297px;
+  width:371px;
   height:37px;
 }
 #u3 {
   position:absolute;
   left:0px;
   top:0px;
-  width:297px;
+  width:371px;
   white-space:nowrap;
 }
 #u4 {
@@ -83,8 +83,8 @@
 }
 #u6 {
   position:absolute;
-  left:90px;
-  top:380px;
+  left:78px;
+  top:382px;
   width:300px;
   height:18px;
   font-size:16px;
@@ -116,7 +116,7 @@
   top:0px;
   width:200px;
   height:25px;
-  font-family:'ArialMT', 'Arial Regular', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:13px;
@@ -276,7 +276,7 @@
   top:0px;
   width:636px;
   height:30px;
-  font-family:'ArialMT', 'Arial Regular', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:16px;
@@ -338,7 +338,7 @@
   top:0px;
   width:586px;
   height:40px;
-  font-family:'ArialMT', 'Arial Regular', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:16px;
@@ -434,7 +434,7 @@
   top:0px;
   width:586px;
   height:40px;
-  font-family:'ArialMT', 'Arial Regular', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:16px;
@@ -523,7 +523,7 @@
   top:0px;
   width:491px;
   height:39px;
-  font-family:'ArialMT', 'Arial Regular', 'Arial';
+  font-family:'ArialMT', 'Arial';
   font-weight:400;
   font-style:normal;
   font-size:18px;
