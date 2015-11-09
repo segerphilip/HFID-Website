@@ -50,6 +50,17 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+.intro-section a {
+    color: #E74C3C;
+    text-decoration: underline;
+    font-size: 200%;
+}
+
+.intro-section h3 {
+    text-align: left;
+    color: #888A8A;
+}
+
 .about-section {
     padding-top: 50px;
     padding-bottom: 50px;
