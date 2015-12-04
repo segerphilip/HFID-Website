@@ -56,6 +56,9 @@
 										<li>
 												<a class="page-scroll" href="#designrefinement">Design Refinement</a>
 										</li>
+										<li>
+												<a class="page-scroll" href="#finalrefinement">Final Refinement</a>
+										</li>
 								</ul>
 						</div>
 						<!-- /.navbar-collapse -->
@@ -455,7 +458,7 @@
 						<div class="row">
 								<div class="col-lg-12">
 								<h1>Prototype</h1>
-								<a href="axure/home.html" target="_blank">Click here to begin prototype runthrough</a>
+								<a href="axure/home.html" target="_blank">Click here to begin prototype runthrough (OUTDATED - see below)</a>
 								<h3>Welcome to the Team Room Usability Study</h3>
 								<p>In this activity, we will be walking through the creation, joining, and experience of a conference call. We have a series of tasks to make your experience more goal-oriented, and we look forward to your feedback. We also want you to keep in mind that Team Room is designed for professionals who work on teams and generally have conference calls in order to communicate about and/or collaboratively engage in the work the team has to do, so try to put yourself in the shoes of such a person if you can.<br></p>
 								<h3>Design a Conference/Meeting</h3>
@@ -526,6 +529,62 @@
 										</object>
 										<h2>Refinement Presentation</h2>
 										<iframe src="https://docs.google.com/presentation/d/19-Xs0KnHITP15vJUmTatRBonRRk6KFETbxAlkEavpaY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+								</div>
+						</div>
+				</div>
+		</section>
+
+		<!-- Prototype Section -->
+		<section id="finalrefinement" class="intro-section">
+				<div class="container">
+						<div class="row">
+								<div class="col-lg-12">
+								<h1>Final Refinement and Updated Prototype</h1>
+								<p>Following the heuristic evaluation, the team has spent time adjusting layout and visual aesthetic of the prototype. Using Axure, a wireframe prototyping software to make click-through interfaces, we attempted to address the concerns raised by the heuristic evaluation, as well as execute on intended changes outlined in the previous section.<br><br>
+								Direct Response to Severity 3 Items<br></p>
+								<ol>
+									<li>[H6 Flexibility and efficiency of use] (Severity 3) The link to invite others to the room cannot readily be found once inside the room. Please consider adding this link to room page to ensure that people can always successfully invite others. Think: Google Docs.</li><br>
+									<ol>
+										<li>We did add an invite button at the bottom of the call screen to address this.</li><br>
+										<li><img src="images/3leavecall-old.png"></li><br>
+										<li><img src="images/3leavecall-new.png"></li><br>
+									</ol>
+									<li>[H1 Visibility of system status] (Severity 3) When the page is loading or sending, it should show a now loading page to keep the user informed about what the system is doing. Also, when the chat is opened, it hides part of the video screen, which may present an issue when users are trying to look at the shared document, such as the budget.</li><br>
+									<ol>
+										<li>We chose not to address this, as we feel like the benefit gained from adding a loading experience will not be worth the time it takes to implement using our prototyping tool. Additionally, our prototyping tool is slow enough that any loading experience would also need to load.</li><br>
+										<li>We also chose not to address the chat covering part of the workspace, as users will likely be either be talking to each other over the chat or editing documents in the workspace. It is unlikely that they will be trying to do both of these things at once.</li><br>
+									</ol>
+									<li>[H4 Consistency and standards] (Severity 3) It wasn’t entirely clear what the agenda was for, or how to use it. For example, the check box indicates that multiple items can be selected, but I don’t know how that would be useful in this context. Also, a delete button should be added so that an agenda can be deleted.</li><br>
+									<ol>
+										<li>We chose not to add a delete button because we have edit functionality. Additionally, after much consideration, we determined that the only case in which a user would want to delete an agenda item entirely (rather than just editing it) is if an agenda item is no longer relevant to the meeting. In this rare case, users could edit an item to be empty, which would effectively remove the item.</li><br>
+									</ol>
+									<li>[H8 Aesthetic and minimalist design] (Severity 3) There are a lot of buttons in the initial demo picture for the scheduling assistance, which may confuse a novice user. The top row especially has a variety of buttons that can be distracting, making the conference button hard to find. Less features and/or making the important buttons more obvious may lessen this problem.</li><br>
+									<ol>
+										<li>We addressed this by changing the “add conference call” button to an icon to make it stand out more. Additionally, we think that part of the reason that the icon is so hard to find is because we, as well as our evaluators, are very familiar with Outlook, and therefore didn’t think to look in the Outlook interface for new actions.</li><br>
+										<li><img src="images/2icon-old.png"></li><br>
+										<li><img src="images/2icon-new.png"></li><br>
+									</ol>
+									<li>[H1 Visibility of system status] (Severity 3) On the team room setup page, one text entry bar controls sequential input of team room title and agenda items. First a user is supposed to enter a name for the room and then enter individual agenda items. The name is stored in the grey box first with no visual indication that it is a name. It looks as if it could be an agenda item. It is only after one enters an agenda item (which is labeled as “Task Number n:”) that one is sure that the first text they input was, by process of elimination, the name. Consider labeling displayed data, not displaying different types of data in the same container, and/or using an input method which is clearer about what data is/was input.</li><br>
+									<ol>
+										<li>We agreed with this evaluator, and changed this part of the interface by adding a second text box for adding agenda items, and adjusted the layout to accommodate this.</li><br>
+										<li><img src="images/1tasks-old.png"></li><br>
+										<li><img src="images/1tasks-new.png"></li><br>
+									</ol>
+									<li>[H1 Visibility of system status] (Severity 3) On the team room setup page, one text entry bar controls sequential input of team room title and agenda items. This bar features placeholder text to inform the user of the bar’s current function. Clicking in the bar makes the placeholder text disappear (fairly expected), but clicking outside of the bar before typing anything does not restore the placeholder text. Because there is no other indication of what role this bar is filling, a user has no indication of what sort of data they are expected to input.</li><br>
+									<ol>
+										<li>We adjusted our prototype such that the placeholder text remains until the user has typed in the box. The revised layout of this page also helps the user to understand what information should be entered in which textbox.</li><br>
+									</ol>
+									<li>[H9 Help users recognize, diagnose, and recover from errors] (Severity 3) Possible errors of using this system has not been identified in the demo. Maybe adding a way of breaking the system could better inform the users on what not to do to help them avoid errors. For example, if a file has not been found during the meeting, the platform should return a pop up that says file not found.</li><br>
+									<ol>
+										<li>Our prototype intentionally avoids giving users options that they cannot select (such as clicking on filenames that do not exist, or entering the room before mandatorily providing identification). To this end, we did not “add errors” to the experience for our users. However, recognizing the spirit of the heuristic, we make note of the number of semantic errors a user can make that our system allows them to fix including Edit, Addition, and Deletion. Given that semantic errors would be very difficult for the prototype to detect (as it is currently executed), we did not choose to attempt to pre-diagnose these for users.</li><br>
+									</ol>
+								</ol>
+								<h2>Further Adjustments</h2>
+								<p>Also raised during the heuristic evaluation were small adjustments to the experience. One such suggestion was the deletion of the pop-up with meeting link following meeting design/set-up. We had initially included this page because we wanted to give the user an opportunity to preview the room before finishing the set-up of the meeting. Our evaluators indicated that they were confused as to the option - was it to share with others? Was it to click? Our solution, upon reflection on the utility of the pop-up was to delete it. A link to the meeting is populated within the iCal directly, which can be clicked by the meeting designer in order to enter the room or can be copied and shared in another format if they so desire.<br><br>
+								A consistency concern with whether to use the “Enter” key or click on a button was also raised. We had unintentionally used different standards. This is addressed by providing a clickable “enter” option to all editable fields. To aid, we will be adding some “hover-help” alt-text to features to explain their use.<br><br>
+								We also added better and more specific labeling language throughout the prototype. To this end, we now specify the type of material that will be provided to a user if the call is provided. Next we add better symbolic labeling to “Add File” within the main call screen. Upon main call screen loading, we provide instructions on the WhiteBoard to better inform the user about use in the prototype.<br><br>
+								Last, we have added a Share Screen button, and a Share Screen experience for the users. Though logistically sharing screens is challenging with this prototyping tool, this is a feature we felt strongly would be included in a true prototype. To this end, we attempted the next-best experience which is being on the receiving end of a share-screen. This also leverages another feature we are rolling out, which is video screen enlargement on the WhiteBoard.<br><br>
+								All of our changes can be viewed at our new and improved prototype: <a href="axure/home.html" target="_blank">Available Here</a></p>
 								</div>
 						</div>
 				</div>
